@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html
+        {
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: orange;
+
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: orange;
+            
+        }
+        
+        .container > div
+        {
+            font-size: 2em;
+            border: 2px solid red;
+            width: 50%;
+            
+        }
+
+        .container > div > div
+        {
+            border: 2px solid blue;
+            width: 50%;
+        }
+        
+        .mycont
+        {
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, voluptate deserunt deleniti at voluptas
+            voluptatibus ipsa aliquam rem, expedita modi ea beatae sed iure officiis similique repellat nobis explicabo
+            pariatur velit nam vero eos! Animi impedit perferendis, facilis temporibus dicta esse officiis! Aliquid,
+            asperiores iste? At eligendi praesentium molestias sapiente minima nulla numquam accusamus laudantium
+            voluptatum.
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt suscipit, blanditiis repellat laborum earum doloribus, molestias odit nobis ratione provident mollitia consequatur. Voluptates.
+            </div>
+        
+        </div>
+        <!-- lorem999 -->
+    </div>
+
+    <div class="mycont">
+        This is another container
+    </div>
+
+</body>
+
+</html>
